@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #282a36;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff79c6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff79c6;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff79c6;
+            margin-bottom: 2rem;
+        }
+
+        .projects {
+            display: flex;
+    flex-direction: column; 
+    gap: 1.5rem; 
+    padding: 1rem;
+    align-items: center; 
+        }
+
+        .project-link {
+            display: block;
+    padding: 1rem;
+    background-color: #44475a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 80%; 
+    text-align: center;
+        }
+
+        .project-link:hover {
+            background-color: #6272a4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Bhargav Krishna</div>
+        <div>
+            <a href="https://www.linkedin.com/in/tzbhargav/" aria-current="page">LinkedIn</a>
+            <a target="_blank" href="https://www.github.com/tzbhargav">GitHub</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Mini JavaScript Projects</h1>
+        <div class="projects">
+            <a class="project-link" href="./Color Switcher/index.html">
+                Project 1 - Color Changer 🎨
+            </a>
+            <a class="project-link" href="./BMI Calculator/index.html">
+                Project 2 - BMI Generator 🏋️ 
+            </a>
+            <a class="project-link" href="./Digital Clock/index.html">
+                Project 3 - Digital Clock ⏰
+            </a>
+            <a class="project-link" href="./Guess the number/index.html">
+                Project 4 - Guess the Number 🤨
+            </a>
+            <h2>Click on any project to redirect to the project page</h2>
+        </div>
+    </main>
+</body>
+</html>

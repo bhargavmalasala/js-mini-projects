@@ -1,0 +1,100 @@
+* {
+    font-family: 'Lucida Sans';
+}
+
+body {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff79c6;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.guessField {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.guessSubmit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #ff79c6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.guessSubmit:hover {
+    background-color: #ff92d0;
+}
+
+.resultParas {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #444444;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resultParas p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.lowOrHi {
+    font-weight: bold;
+    color: #ff6347; /* Highlight wrong guesses */
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .guessField, .guessSubmit {
+        font-size: 1rem;
+    }
+}
